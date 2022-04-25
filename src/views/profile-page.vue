@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="content-block">Profile</h2>
+    <h2 class="content-block">Профиль</h2>
 
     <div class="content-block dx-card responsive-paddings">
       <div class="form-avatar">
@@ -41,11 +41,7 @@ export default {
         BirthDate: new Date("1974/11/5"),
         HireDate: new Date("2005/05/11"),
         Notes:
-
-          "Sandra is a CPA and has been our controller since 2008. " +
-          "She loves to interact with staff so if you`ve not met her, be certain to say hi." +
-          "\r\n\r\n" +
-          "Sandra has 2 daughters both of whom are accomplished gymnasts.",
+          "По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен. ",
         Address: "4600 N Virginia Rd."
       },
       colCountByScreen: {

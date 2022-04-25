@@ -1,25 +1,20 @@
 export default [
   {
-    text: "Home",
+    text: "Главная",
     path: "/home",
     icon: "home"
   },
   {
-    text: "Examples",
+    text: "Профиль",
+    path: "/profile",
     icon: "folder",
-    items: [
-      {
-        text: "Profile",
-        path: "/profile"
-      },
-      {
-        text: "Tasks",
-        path: "/tasks"
-      },
-      {
-        text: 'Gantt Page',
-        path: '/gantt-page',
-      }
-    ]
+  },{
+    text: "Задачи",
+    path: "/tasks",
+    icon: "folder",
+  },{
+    text: 'Аналитика',
+    path: '/gantt-page',
+    icon: "folder",
   },
   ];

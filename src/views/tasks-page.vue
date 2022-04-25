@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="content-block">Tasks</h2>
+    <h2 class="content-block">Задачи</h2>
 
     <dx-data-grid
       class="dx-card wide-card"
@@ -19,20 +19,20 @@
 
       <dx-column
         data-field="Task_Subject"
-        caption="Subject"
+        caption="Название"
         :width="190"
         :hiding-priority="8"
       />
 
       <dx-column
         data-field="Task_Status"
-        caption="Status"
+        caption="Статус"
         :hiding-priority="6"
       />
 
       <dx-column
         data-field="Task_Priority"
-        caption="Priority"
+        caption="Приоритет"
         :hiding-priority="5"
       >
         <dx-lookup
@@ -44,21 +44,21 @@
 
       <dx-column
         data-field="ResponsibleEmployee.Employee_Full_Name"
-        caption="Assigned To"
+          caption="Исполнитель"
         :allow-sorting="false"
         :hiding-priority="7"
       />
 
       <dx-column
         data-field="Task_Start_Date"
-        caption="Start Date"
+        caption="Начало"
         data-type="date"
         :hiding-priority="3"
       />
 
       <dx-column
         data-field="Task_Due_Date"
-        caption="Due Date"
+        caption="Срок"
         data-type="date"
         :hiding-priority="4"
       />
@@ -72,7 +72,7 @@
 
       <dx-column
         data-field="Task_Completion"
-        caption="Completion"
+        caption="Завершение"
         :hiding-priority="0"
       />
     </dx-data-grid>
@@ -88,6 +88,8 @@ import DxDataGrid, {
   DxPager,
   DxPaging
 } from "devextreme-vue/data-grid";
+
+import {DataTasks} from "/src/data_tasks.js";
 
 const priorities = [
   { name: "High", value: 4 },
@@ -107,7 +109,7 @@ export default {
       store: {
         type: "odata",
         key: "Task_ID",
-        url: "https://js.devexpress.com/Demos/DevAV/odata/Tasks"
+        url: DataTasks
       },
       expand: "ResponsibleEmployee",
       select: [

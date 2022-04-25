@@ -76,12 +76,12 @@ export default {
       user: { },
       userMenuItems: [
         {
-          text: "Profile",
+          text: "Профиль",
           icon: "user",
           onClick: this.onProfileClick
         },
         {
-          text: "Logout",
+          text: "Выход",
           icon: "runner",
           onClick: this.onLogoutClick
         }

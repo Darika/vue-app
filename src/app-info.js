@@ -1,3 +1,3 @@
 export default {
-  title: "Vue App"
+  title: "Сервис проектов"
 };

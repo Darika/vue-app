@@ -30,15 +30,15 @@
     <DxColumn
         :width="300"
         data-field="title"
-        caption="Subject"
+        caption="Задача"
     />
     <DxColumn
         data-field="start"
-        caption="Start Date"
+        caption="Начало"
     />
     <DxColumn
         data-field="end"
-        caption="End Date"
+        caption="Окончание"
     />
   </DxGantt>
 </template>

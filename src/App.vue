@@ -21,6 +21,8 @@
 <script>
 import AppFooter from "./components/app-footer";
 import { sizes, subscribe, unsubscribe } from "./utils/media-query";
+import ruMessages from "devextreme/localization/messages/ru.json";
+import { loadMessages, locale } from 'devextreme/localization';
 
 function getScreenSizeInfo() {
   const screenSizes = sizes();
@@ -34,6 +36,10 @@ function getScreenSizeInfo() {
 
 export default {
   name: "app",
+  created() {
+    loadMessages(ruMessages);
+    locale(navigator.language);
+  },
   data() {
     return {
       title: this.$appInfo.title,

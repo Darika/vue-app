@@ -1,28 +1,28 @@
 export const tasks = [{
     id: 1,
     parentId: 0,
-    title: 'Resource 1',
+    title: 'Задача 1',
     start: new Date('2022-02-10T05:00:00.000Z'),
     end: new Date('2022-02-19T09:00:00.000Z'),
     progress: 60,
 }, {
     id: 2,
     parentId: 0,
-    title: 'Resource 2',
+    title: 'Задача 2',
     start: new Date('2022-03-01T05:00:00.000Z'),
     end: new Date('2022-03-10T09:00:00.000Z'),
     progress: 100,
 }, {
     id: 3,
     parentId: 0,
-    title: 'Resource 3',
+    title: 'Задача 3',
     start: new Date('2022-02-05T10:00:00.000Z'),
     end: new Date('2022-02-19T09:00:00.000Z'),
     progress: 15,
 }, {
     id: 4,
     parentId: 0,
-    title: 'Resource 4',
+    title: 'Задача 4',
     start: new Date('2022-03-29T10:00:00.000Z'),
     end: new Date('2022-04-05T09:00:00.000Z'),
     progress: 60,
@@ -52,19 +52,19 @@ export const dependencies = [{
 
 export const resources = [{
     id: 1,
-    text: 'Management',
+    text: 'Менеджер',
 }, {
     id: 2,
-    text: 'Project Manager',
+    text: 'Менеджер проекта',
 }, {
     id: 3,
-    text: 'Analyst',
+    text: 'Аналитик',
 }, {
     id: 4,
-    text: 'Developer',
+    text: 'Разработчик',
 }, {
     id: 5,
-    text: 'Testers',
+    text: 'Тестировщик',
 }, {
     id: 6,
     text: 'Trainers',
